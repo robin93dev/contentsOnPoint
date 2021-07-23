@@ -2,23 +2,40 @@ body {
     background-color: plum;
 }
 
-header {
-    border: blueviolet 5px solid;
-}
-
-header h1 {
-    text-align: center;
-   
-}
-nav {
-    float: left;
-    margin: 100px;
+/* header {
     background-color: blueviolet;
     border-radius: 10px;
-    width: 200px;
+    height: 100px;
+    
+} */
+
+/* header h1 {
+    text-align: center;
+    
+   
+} */
+nav {
+    float: left;
+    margin: 30px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    width:max-content;
     font-size: 20PX;
+    display: flex;
     
     
+}
+
+nav div {
+    margin: 10px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+nav a:active {
+    color: rgba(152, 206, 231, 0.877);
 }
 
 a {
@@ -31,4 +48,8 @@ a {
 img {
     margin: 50px;
     border-radius: 10px;
+}
+
+.content {
+    clear : both;
 }
