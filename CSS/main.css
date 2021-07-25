@@ -1,20 +1,11 @@
+
 body {
     background-color: plum;
-    transition: all 1s;
+    transition: all 1S;
+   
 }
 
-/* header {
-    background-color: blueviolet;
-    border-radius: 10px;
-    height: 100px;
-    
-} */
 
-/* header h1 {
-    text-align: center;
-    
-   
-} */
 nav {
     float: left;
     margin: 30px;
@@ -37,6 +28,7 @@ nav a:hover {
 
 nav a:active {
     color: rgba(152, 206, 231, 0.877);
+   
 }
 
 a {
