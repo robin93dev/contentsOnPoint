@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main</title>
     <link rel="stylesheet" href="./CSS/main.css">
+    <!-- <script src="main.js"></script> -->
 </head>
 <body>
     <header></header>
@@ -18,29 +19,30 @@
           <div><h4><a href="./show.html">예능</a></h4></div>
           <div><h4><a href="./movie.html">영화</a></h4></div>
           <div><h4><a href="./book.html">책</a></h4></div>
-          <div><h4><a href="./youtube.html">유튜브</a></h4></div>
-            
-            
+          <div><h4><a href="./youtube.html">유튜브</a></h4></div>            
+          
         </nav>
-    
-
-    
+        <button id="button" value="night">야간모드</button>    
+        
     <img src="./CSS/contents.jpg" alt="이미지" width="500px" height="500px">
-
     <script>
-     const red = () => {
-      document.body.style.backgroundColor = ' rgb(83, 22, 83)';
-      setTimeout(plum, 5000);
-     }
+      $button = document.querySelector('#button');
+       document.body.querySelector('#button').addEventListener('click',()=>{
 
-     const plum = () => {
-      document.body.style.backgroundColor = 'plum';
-      setTimeout(red, 5000);
-     }
+        if($button.value === 'night'){
+          document.body.style.backgroundColor='black';
+          $button.value = 'day';
+          $button.textContent = '주간모드';
+        } else if($button.value === 'day'){
+          document.body.style.backgroundColor='plum';
+          $button.value = 'night';
+          $button.textContent = '야간모드';
+        }
+        
 
-     setTimeout(red, 3000);
-    
+      });
 
+      
     </script>
 </body>
 </html>
